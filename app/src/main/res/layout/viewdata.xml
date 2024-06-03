@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/hotelphoto1"
+                android:src="@drawable/person"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/hotelphoto1"
+                android:hint="Name of hotel"
+                android:textSize="21dp"
+                android:id="@+id/hotelname1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter address"
+                android:layout_toRightOf="@+id/hotelphoto1"
+                android:layout_below="@+id/hotelname1"
+                android:layout_marginTop="21dp"
+                android:id="@+id/hoteladdress1"
+                android:textSize="21dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:textSize="51dp"
+                android:layout_toRightOf="@+id/hotelphoto1"
+                android:layout_below="@+id/hoteladdress1"
+                android:layout_marginTop="0dp"
+                android:id="@+id/ruppee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="price"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ruppee"
+                android:layout_below="@+id/hoteladdress1"
+                android:textSize="31dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/hotelprice1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/hoteladdress1"
+                android:backgroundTint="#EF4510"
+                android:layout_marginTop="21dp"
+                android:text="View Detail"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

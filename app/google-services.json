@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "167182851193",
+    "project_id": "find-your-roommates",
+    "storage_bucket": "find-your-roommates.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167182851193:android:33e0367716bac3a70e88a8",
+        "android_client_info": {
+          "package_name": "com.example.findyourroommates"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7UijzQmIt1l7g9OdvaGKXLZcyFSDwG10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

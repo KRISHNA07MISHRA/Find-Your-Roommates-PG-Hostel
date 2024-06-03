@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.profilefragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/person"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img2"
+                android:layout_marginTop="21dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:orientation="vertical"
+                android:id="@+id/linear8"
+                android:layout_marginTop="22dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="11dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Name"
+                        android:id="@+id/profilename2"
+                        android:layout_marginLeft="11dp"
+                        android:textSize="22dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="11dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Email"
+                        android:id="@+id/profileemail2"
+                        android:layout_marginLeft="11dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone:"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="11dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Phone No."
+                        android:inputType="number"
+                        android:id="@+id/profilephone2"
+                        android:layout_marginLeft="11dp"
+                        android:textSize="22dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="11dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your address"
+                        android:layout_marginLeft="11dp"
+                        android:id="@+id/profileaddress2"
+                        android:textSize="22dp"/>
+                </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="22dp"
+                android:layout_marginTop="21dp"
+                android:id="@+id/logout"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
