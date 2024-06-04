@@ -60,6 +60,7 @@
                 android:layout_below="@+id/hoteladdress1"
                 android:backgroundTint="#EF4510"
                 android:layout_marginTop="21dp"
+                android:id="@+id/viewdata"
                 android:text="View Detail"/>
 
 

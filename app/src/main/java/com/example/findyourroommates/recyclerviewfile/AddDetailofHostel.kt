@@ -77,12 +77,15 @@ class AddDetailofHostel : AppCompatActivity() {
             }
 
             writeuserdata(name,address,phone,price,metro,food,market)
+
         }
 
 
 
 
     }
+
+
     val imagelauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         val curruser = auth.currentUser.toString()
         if(it.resultCode == Activity.RESULT_OK){

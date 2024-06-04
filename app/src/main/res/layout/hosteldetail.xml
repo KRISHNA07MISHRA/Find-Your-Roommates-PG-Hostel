@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hostelpic"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/person"
+                android:id="@+id/sethotelpic"
+                android:layout_marginTop="21dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textSize="25dp"
+
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="21dp"
+                android:id="@+id/txtname"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Hostel/pg name"
+                android:textSize="21dp"
+                android:layout_marginLeft="21dp"
+                android:backgroundTint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sethotelname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="25dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:backgroundTint="#000"
+                android:id="@+id/sethoteladdress"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Address of your Pg/hostel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No."
+                android:textSize="25dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:backgroundTint="#000"
+                android:inputType="number"
+                android:id="@+id/sethotelphone"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your Contact no"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="25dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="21dp"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:backgroundTint="#000"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:id="@+id/sethotelprice"
+                android:hint="Enter Price of each person"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Features of your hostel"
+                android:textSize="32dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="32dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="42dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near metro:"
+                    android:textSize="21dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter yes or no"
+                    android:id="@+id/sethotelnearmetro"
+                    android:layout_marginLeft="21dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="42dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food quality:"
+                    android:textSize="21dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sethotelfood"
+                    android:hint="Enter food quality"
+                    android:layout_marginLeft="21dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="42dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near Market:"
+                    android:textSize="21dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Market name near form hostel"
+                    android:id="@+id/sethotelmarket"
+                    android:layout_marginLeft="21dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

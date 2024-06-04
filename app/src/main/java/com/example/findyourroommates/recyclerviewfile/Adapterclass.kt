@@ -3,19 +3,25 @@ package com.example.findyourroommates.recyclerviewfile
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView.OnItemClickListener
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.findyourroommates.R
 import com.squareup.picasso.Picasso
 
-class Adapterclass(private val userList: ArrayList<hoteldata>) : RecyclerView.Adapter<Adapterclass.MyViewHolder>() {
+class Adapterclass(private val userList: ArrayList<hoteldata>,private val ItemClickListener:OnItemClickListener) : RecyclerView.Adapter<Adapterclass.MyViewHolder>() {
 
+    interface OnItemClickListener{
+        fun viewdetail(nameofhostel:String)
+    }
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val setname: TextView = itemView.findViewById(R.id.hotelname1)
         val setaddress: TextView = itemView.findViewById(R.id.hoteladdress1)
         val setprice: TextView = itemView.findViewById(R.id.hotelprice1)
         val setphoto: ImageView = itemView.findViewById(R.id.hotelphoto1)
+        val viewdata:Button = itemView.findViewById(R.id.viewdata)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -42,6 +48,10 @@ class Adapterclass(private val userList: ArrayList<hoteldata>) : RecyclerView.Ad
             // Picasso.get().load(R.drawable.placeholder_image).into(holder.setphoto)
             // or
             // holder.setphoto.setImageDrawable(null)
+        }
+
+        holder.viewdata.setOnClickListener {
+            ItemClickListener.viewdetail(currentItem.name!!)
         }
     }
 }
