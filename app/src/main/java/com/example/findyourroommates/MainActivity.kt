@@ -1,19 +1,14 @@
 package com.example.findyourroommates
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.findyourroommates.fragments.Homescreen
-import com.example.findyourroommates.fragments.notificationfragment
+import com.example.findyourroommates.Notification.notificationfragment
 import com.example.findyourroommates.fragments.profilefragment
-import com.example.findyourroommates.security.Login
-import com.google.firebase.Firebase
-import com.google.firebase.auth.auth
 
 class MainActivity : AppCompatActivity() {
    lateinit var button: Button
